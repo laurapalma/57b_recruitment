@@ -4,7 +4,7 @@ import CardOpportunities from './CardOpportunities'
 import icoUser from './img/icoData.svg'
 import icoWeb from './img/icoWeb.svg'
 import icoBlockchain from './img/icoBlockchain.svg'
-import icoTitle from './img/title.png'
+import icoTitle from './img/title.svg'
 
 const productBlockchain = [
   {
