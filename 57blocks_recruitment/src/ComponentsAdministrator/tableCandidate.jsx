@@ -1,9 +1,8 @@
 import React from 'react'
-import CandidateFilters from './candidateFilters.jsx'
-import { TableContainer, Table, TableCell, TableHead, TableRow, TableBody, Paper, Grid } from '@material-ui/core'
-import { withStyles, makeStyles } from '@material-ui/core/styles';
-import iconImport from './Import.png'
-import iconText from './iconText.png'
+import CandidateFilters from './candidateFilters.jsx.js'
+import { TableContainer, Table, TableCell, TableHead, TableRow, TableBody, Paper, Grid, withStyles, makeStyles } from '@mui/material/'
+import iconImport from './img/Import.png'
+import iconText from './img/iconText.png'
 // {rows.map((row) => ( dentro de <TableBody>))}
 
 const StyledTableCell = withStyles((theme) => ({

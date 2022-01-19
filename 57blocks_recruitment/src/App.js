@@ -1,9 +1,9 @@
-import Candidates from './componentsCandidates/candidates.jsx'
+import JobOpportunities from './ComponentsCandidate/JobOpportunities'
 
 function App() {
   return (
     <>
-      <Candidates/>
+      <JobOpportunities/>
     </>
   )
 }

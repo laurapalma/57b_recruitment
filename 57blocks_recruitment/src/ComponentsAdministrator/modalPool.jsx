@@ -1,5 +1,5 @@
 import React from 'react'
-import {Button, Modal} from '@material-ui/core'
+import {Button, Modal} from '@mui/material/'
 
 const ModalPool = () => {
     return(

@@ -1,8 +1,8 @@
 import React from 'react'
 //import CandidateFilters from './candidateFilters.jsx'
 import TableCandidate from './tableCandidate.jsx'
-import { Box, Grid, TextField, InputAdornment,  Typography} from '@material-ui/core'
-import Shape from './Shape.png'
+import { Box, Grid, TextField, InputAdornment,  Typography} from '@mui/material/'
+import Shape from './img/Shape.png'
 
 /* const useStyles = ((theme) => ({
     root: {
