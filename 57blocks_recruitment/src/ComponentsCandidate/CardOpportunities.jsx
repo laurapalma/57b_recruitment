@@ -3,7 +3,6 @@ import { Card, CardContent, Typography} from '@mui/material/'
 
 const CardOpportunities = ({item}) => {
   return (
-    <>  
       <Card
         sx={{    
           display:'flex',          
@@ -28,7 +27,6 @@ const CardOpportunities = ({item}) => {
           <Typography sx={{ fontSize: 18}} variant='p'>{item.text}</Typography>
         </CardContent>
       </Card> 
-    </>
   )
 }
 

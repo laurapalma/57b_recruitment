@@ -1,9 +1,9 @@
 import React from 'react'
 import { Box, Typography } from '@mui/material/'
 import CardOpportunities from './CardOpportunities'
-import icoUser from './img/ico-user.png'
-import icoWeb from './img/ico-web.png'
-import icoBlockchain from './img/ico-blockchain.png'
+import icoUser from './img/icoData.svg'
+import icoWeb from './img/icoWeb.svg'
+import icoBlockchain from './img/icoBlockchain.svg'
 import icoTitle from './img/title.png'
 
 const productBlockchain = [
@@ -25,7 +25,6 @@ const productBlockchain = [
 ];
 const JobOpportunities = () => {
   return (
-    <>
       <Box
         display="flex"
         alignItems="center"
@@ -50,7 +49,6 @@ const JobOpportunities = () => {
           <CardOpportunities key={product.id} item={product} />
         ))}
       </Box>
-    </>
   )
 }
 
