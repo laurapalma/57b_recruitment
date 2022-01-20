@@ -23,6 +23,7 @@ const productBlockchain = [
     icon: icoUser,
   },
 ];
+
 const JobOpportunities = () => {
   return (
       <Box

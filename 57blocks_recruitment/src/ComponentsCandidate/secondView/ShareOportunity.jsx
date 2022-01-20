@@ -5,7 +5,6 @@ import {Link, Box} from '@mui/material/'
 
 const ShareOportunity = () => {
   return (
-    <>
       <Box
         style={{
           display: 'flex',
@@ -34,7 +33,6 @@ const ShareOportunity = () => {
               > Share </Link>
           </Box>
       </Box>
-    </>
   )
 }
 
