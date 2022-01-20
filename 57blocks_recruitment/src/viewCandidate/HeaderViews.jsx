@@ -32,7 +32,7 @@ const HeaderView = () => {
         <Button style={{ color: "black", border: "none", marginRight: "5vw" }}>
           Careers
         </Button>
-        <Link to="">
+        <Link to="table-candidates">
           <Button
             style={{
               color: "black",

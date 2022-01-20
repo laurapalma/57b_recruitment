@@ -5,6 +5,7 @@ import { grey } from "@mui/material/colors";
 import FirstViewCandidate from "./viewCandidate/firstViewCandidate.jsx";
 import OpportunityDetailsView from "./viewCandidate/OpportunityDetailsView.jsx";
 import ApplyFormView from "./viewCandidate/ApplyFormView.jsx";
+import Candidates from "./ComponentsAdministrator/candidates.jsx";
 
 const primaryMainColor = grey[900];
 
@@ -28,6 +29,7 @@ function App() {
               element={<OpportunityDetailsView />}
             />
             <Route path="apply" element={<ApplyFormView />} />
+            <Route path="table-candidates" element={<Candidates />} />
           </Routes>
         </BrowserRouter>
       </div>
