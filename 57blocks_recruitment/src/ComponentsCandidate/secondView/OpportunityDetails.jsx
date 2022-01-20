@@ -1,7 +1,8 @@
-import React from 'react';
-import WhatWillYouDo from './WhatWillYouDo.jsx';
-import OpportunityConditions from './OpportunityConditions.jsx';
-import OfferButtons from './UserButtons.jsx';
+import React from 'react'
+import WhatWillYouDo from './WhatWillYouDo.jsx'
+import OpportunityConditions from './OpportunityConditions.jsx'
+import OfferButtons from './UserButtons.jsx'
+import ShareOportunity from './ShareOportunity.jsx'
 
 // Data de prueba.
 const experienceItems = [
@@ -30,6 +31,10 @@ const OpportunityDetails = () => {
             <div style={{display:'flex', justifyContent:'center', marginX: 5}}>
             <OfferButtons textContent= 'Apply'/>
             <OfferButtons textContent= 'Refer'/>
+            </div>
+
+            <div>
+                <ShareOportunity/>
             </div>
         </>
     )
