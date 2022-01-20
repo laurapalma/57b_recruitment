@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import HeaderView from "./HeaderViews.jsx";
 
 const ApplyFormView = () => {
   const navigate = useNavigate();
@@ -9,7 +10,11 @@ const ApplyFormView = () => {
     }, 4000);
   }, []);
 
-  return <h2>Formulario de Postulación</h2>;
+  return (
+    <>
+      <HeaderView />
+    </>
+  );
 };
 
 export default ApplyFormView;
