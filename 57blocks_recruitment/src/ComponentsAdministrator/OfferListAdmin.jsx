@@ -9,6 +9,7 @@ import Button from "@mui/material/Button";
 import view from "../images/view.svg";
 import edit from "../images/edit.svg";
 import trash from "../images/trash.svg";
+import HeaderView from "../viewCandidate/HeaderViews.jsx";
 
 import axios from "axios";
 
@@ -32,7 +33,7 @@ const OfferListAdmin = () => {
   }, []);
 
   const handleClick = () => {
-    window.location = "/createJob";
+    window.location = "create-new-opportunity";
   };
 
   const handleDelete = (job) => {
@@ -47,6 +48,7 @@ const OfferListAdmin = () => {
 
   return (
     <>
+      <HeaderView />
       <div
         style={{
           display: "flex",
@@ -127,7 +129,7 @@ const OfferListAdmin = () => {
                 {job.summary}
               </Typography>
               <Link
-                to="/jobOpportunity"
+                to="opportunity-detail/:id"
                 style={{
                   display: "flex",
                   justifyContent: "flex-end",
