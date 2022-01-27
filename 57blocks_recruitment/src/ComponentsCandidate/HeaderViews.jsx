@@ -4,10 +4,6 @@ import { Link } from "react-router-dom";
 import "../ComponentsCandidate/componentsCandidate.css";
 
 const HeaderView = () => {
-  const loginAdministrator = () => {
-    console.log("solucionando la ruta");
-  };
-
   return (
     <AppBar
       position="static"
