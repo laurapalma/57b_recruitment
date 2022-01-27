@@ -55,7 +55,8 @@ const HeaderView = () => {
               marginRight: "2vw",
               width: "8vw",
             }}
-            onClick={() => loginAdministrator()}
+            component={Link}
+            to={"Login-Administrator"}
           >
             Login
           </Button>
