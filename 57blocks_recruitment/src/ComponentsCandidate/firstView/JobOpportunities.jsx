@@ -4,7 +4,7 @@ import { Box, Typography } from "@mui/material/";
 import CardOpportunities from "./CardOpportunities";
 import HeaderViews from "../HeaderViews";
 import icoUser from "../img/icoData.svg";
-import icoWeb from "../img/icoWeb.svg";
+import icoWeb from "../img/ico-web.svg";
 import icoBlockchain from "../img/icoBlockchain.svg";
 import "../componentsCandidate.css";
 
@@ -69,9 +69,11 @@ const JobOpportunities = () => {
         >
           We Got Three Main Products
         </Typography>
-        {productBlockchain.map((product) => (
-          <CardOpportunities key={product.id} item={product} />
-        ))}
+        <div className="container_cards">
+          {productBlockchain.map((product) => (
+            <CardOpportunities key={product.id} item={product} />
+          ))}
+        </div>
       </Box>
     </>
   );
