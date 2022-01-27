@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, CardContent, Typography } from "@mui/material/";
+import "../componentsCandidate.css";
 
 const CardOpportunities = ({ item }) => {
   return (
@@ -14,7 +15,7 @@ const CardOpportunities = ({ item }) => {
         marginTop: { xs: 3 },
       }}
       spacing={8}
-      elevation={1}
+      elevation={3}
     >
       <CardContent
         sx={{
@@ -23,8 +24,11 @@ const CardOpportunities = ({ item }) => {
           alignItems: { xs: "center", md: "center" },
         }}
       >
-        <img src={item.icon} alt="ico-Blockchain" />
-        <Typography sx={{ fontSize: { xs: 16, md: 18 } }} variant="p">
+        <img src={item.icon} alt="icons" className="mini_icons" />
+        <Typography
+          sx={{ fontSize: { xs: 16, md: 18 }, marginLeft: { xs: 3 } }}
+          variant="p"
+        >
           {item.text}
         </Typography>
       </CardContent>
