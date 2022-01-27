@@ -1,12 +1,10 @@
 import React from "react";
 import TableCandidate from "./tableCandidate.jsx";
 import { Box, Grid, Typography } from "@mui/material/";
-import HeaderViews from "../viewCandidate/HeaderViews.jsx";
 
 const Candidates = () => {
   return (
     <>
-      <HeaderViews />
       <Grid
         container
         spacing={1}

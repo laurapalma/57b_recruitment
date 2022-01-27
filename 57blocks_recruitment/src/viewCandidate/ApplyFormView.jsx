@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
-import HeaderView from "./HeaderViews.jsx";
+import { useNavigate } from "react-router-dom";
 import FormView from "./FormView.jsx";
 
 const ApplyFormView = () => {
@@ -13,7 +12,6 @@ const ApplyFormView = () => {
 
   return (
     <>
-      <HeaderView />
       <FormView />
     </>
   );

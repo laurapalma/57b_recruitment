@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import { AppBar, Toolbar } from "@mui/material";
 import { Button, IconButton } from "@material-ui/core";
-import HeaderView from "./HeaderViews.jsx";
 
 import WhatWillYouDo from "../ComponentsCandidate/secondView/WhatWillYouDo.jsx";
 import OpportunityConditions from "../ComponentsCandidate/secondView/OpportunityConditions.jsx";
@@ -44,7 +43,6 @@ const OpportunityDetails = () => {
 
   return (
     <div>
-      <HeaderView />
       <div style={{ display: "flex", justifyContent: "center" }}>
         <AppBar position="static">
           <Toolbar

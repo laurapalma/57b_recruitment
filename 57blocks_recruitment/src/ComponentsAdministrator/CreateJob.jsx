@@ -1,5 +1,4 @@
 import { React, useState } from "react";
-import HeaderView from "../viewCandidate/HeaderViews.jsx";
 import axios from "axios";
 
 const CreateJob = () => {
@@ -50,7 +49,6 @@ const CreateJob = () => {
 
   return (
     <>
-      <HeaderView />
       <div
         style={{
           width: "80%",

@@ -6,10 +6,9 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
-import view from "../images/view.svg";
-import edit from "../images/edit.svg";
-import trash from "../images/trash.svg";
-import HeaderView from "../viewCandidate/HeaderViews.jsx";
+import view from "./img/view.svg";
+import edit from "./img/edit.svg";
+import trash from "./img/trash.svg";
 
 import axios from "axios";
 
@@ -48,7 +47,6 @@ const OfferListAdmin = () => {
 
   return (
     <>
-      <HeaderView />
       <div
         style={{
           display: "flex",

@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import ValidationApplyForm from "../ComponentsCandidate/ValidationApplyForm.jsx";
+import ValidationApplyForm from "../ComponentsCandidate/ThirdView/ValidationApplyForm.jsx";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import { Button, Container, IconButton } from "@material-ui/core";
 import { AppBar, Toolbar } from "@mui/material";

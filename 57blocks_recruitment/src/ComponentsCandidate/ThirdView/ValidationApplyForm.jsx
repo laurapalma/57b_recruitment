@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
 import level from "./englishLevel.jsx";
-import CustomButton from "../ComponentsCandidate/CustomButtons.jsx";
+import CustomButton from "./CustomButtons.jsx";
 import { Box, TextField } from "@material-ui/core";
 import { MenuItem } from "@material-ui/core";
 import DragAndDrop from "./DragAndDrop.jsx";

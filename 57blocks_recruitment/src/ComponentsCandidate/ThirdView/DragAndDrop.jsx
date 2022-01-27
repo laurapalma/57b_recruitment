@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import upload from "../images/upload.svg";
+import upload from "../img/upload.svg";
 
 const DragAndDrop = ({ onFileChanged }) => {
   const [file, setfile] = useState("");

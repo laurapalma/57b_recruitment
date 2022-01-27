@@ -6,15 +6,15 @@ const CardOpportunities = ({ item }) => {
     <Card
       sx={{
         display: "flex",
-        width: { xs: 343, md: 340 },
+        width: { xs: 343, md: 378 },
         height: { xs: 104, md: 172 },
         justifyContent: { xs: "center", md: "center" },
         alignItems: { xs: "center", md: "center" },
-        flexDirection: { xs: "column", md: "column" },
-        marginTop: 3,
+        flexDirection: { xs: "column", md: "row" },
+        marginTop: { xs: 3 },
       }}
       spacing={8}
-      elevation={3}
+      elevation={1}
     >
       <CardContent
         sx={{
@@ -24,7 +24,7 @@ const CardOpportunities = ({ item }) => {
         }}
       >
         <img src={item.icon} alt="ico-Blockchain" />
-        <Typography sx={{ fontSize: 18 }} variant="p">
+        <Typography sx={{ fontSize: { xs: 16, md: 18 } }} variant="p">
           {item.text}
         </Typography>
       </CardContent>
