@@ -8,6 +8,7 @@ import ApplyFormView from "./viewCandidate/ApplyFormView.jsx";
 import Candidates from "./ComponentsAdministrator/candidates.jsx";
 import CreateJob from "./ComponentsAdministrator/CreateJob.jsx";
 import OfferListAdmin from "./ComponentsAdministrator/OfferListAdmin.jsx";
+import LoginAdm from "./ComponentsAdministrator/LoginAdm.jsx";
 
 const primaryMainColor = grey[900];
 
@@ -31,6 +32,7 @@ function App() {
               element={<OpportunityDetailsView />}
             />
             <Route path="apply" element={<ApplyFormView />} />
+            <Route path="Login-Administrator" element={<LoginAdm />} />
             <Route path="table-candidates" element={<Candidates />} />
             <Route path="create-new-opportunity" element={<CreateJob />} />
             <Route path="offer-list-admin" element={<OfferListAdmin />} />
