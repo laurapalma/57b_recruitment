@@ -39,6 +39,7 @@ const JobOpportunities = () => {
         color="text.primary"
         bgcolor="#F7FBFE"
         paddingTop={{ xs: 3, md: 10 }}
+        paddingBottom={{ xs: 7, md: 10 }}
       >
         <span className="img_title"></span>
         <Typography
