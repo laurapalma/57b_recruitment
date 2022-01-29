@@ -19,6 +19,14 @@
   justify-content: space-around;
 }
 
+.container_cards_jobs {
+  display: grid;
+  gap: 7%;
+  grid-template-columns: 30% 30% 30%;
+  justify-content: space-around;
+  background-color: #f7fbfe;
+}
+
 @media (max-width: 1300px) {
   .img_logo {
     background-repeat: no-repeat;
@@ -36,6 +44,10 @@
     grid-template-columns: 30% 30% 30%;
     justify-content: center;
     margin-right: 3%;
+  }
+  .container_cards_jobs {
+    grid-template-columns: 25% 25% 25%;
+    justify-content: center;
   }
 }
 
@@ -70,5 +82,11 @@
   }
   .mini_icons {
     margin-right: 5px;
+  }
+  .container_cards_jobs {
+    grid-template-columns: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
   }
 }

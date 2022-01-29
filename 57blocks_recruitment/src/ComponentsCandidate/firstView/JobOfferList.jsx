@@ -1,10 +1,6 @@
 import { React, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import Card from "@mui/material/Card";
-import Box from "@mui/material/Box";
-import CardContent from "@mui/material/CardContent";
-import Typography from "@mui/material/Typography";
-import Container from "@mui/material/Container";
+import { Card, Box, CardContent, Typography, Container } from "@mui/material/";
 import axios from "axios";
 
 import UserButtons from "../secondView/UserButtons.jsx";
@@ -32,20 +28,23 @@ const JobOfferList = () => {
     <Container
       sx={{
         display: "grid",
-        gridTemplateColumns: "repeat(3,1fr)",
-        gridGap: "1.3vh",
-        marginTop: "5%",
+        gridTemplateColumns: { xs: "repeat(1,1fr)", md: "repeat(3,1fr)" },
+        marginTop: { xs: 10, md: 20 },
+        justifyContent: "center",
+        alignItems: "center",
         height: "auto",
+        padding: 0,
       }}
     >
       {jobCard.map((job) => (
         <Card
           key={job.id}
           sx={{
-            maxWidth: 300,
+            width: { xs: 343, md: 380 },
+            height: { xs: 345, md: 466 },
             borderRadius: 5,
-            padding: "1rem",
-            margin: 4,
+            padding: 0,
+            margin: 3,
             marginTop: 0,
           }}
           elevation={3}
@@ -59,17 +58,23 @@ const JobOfferList = () => {
                 "&::before": {
                   content: `""`,
                   position: "absolute",
-                  bottom: "12px",
+                  bottom: "14px",
                   width: "calc(100% + 10px)",
                   height: "8px",
-                  left: "-5px",
-                  opacity: "0.5",
+                  left: "5px",
+                  opacity: "0.3",
                   backgroundColor: "#42E9AF",
                 },
               }}
             >
               <Typography
-                sx={{ fontSize: 20, position: "relative", fontWeight: "bold" }}
+                sx={{
+                  fontSize: { xs: 18, md: 24 },
+                  position: "relative",
+                  fontWeight: 600,
+                  marginLeft: 3,
+                  marginTop: 5,
+                }}
                 color="primary"
                 gutterBottom
               >
@@ -77,37 +82,47 @@ const JobOfferList = () => {
               </Typography>
             </Box>
             <Typography
-              sx={{ textAlign: "justify", marginY: 4 }}
-              color="textSecondary"
+              sx={{
+                textAlign: { xs: "left", md: "justify" },
+                marginTop: { xs: 2, md: 3 },
+                marginLeft: 3,
+                fontSize: { xs: 16, md: 18 },
+                maxWidth: 284,
+                maxHeight: { xs: 120, md: 130 },
+                overflow: "hidden",
+                display: "-webkit-box",
+              }}
+              color="#666666"
               gutterBottom
             >
               {job.summary}
             </Typography>
-            <Link to={`opportunity-detail/${job.id}`}>
-              <Box
-                style={{
-                  display: "flex",
-                  justifyContent: "flex-end",
-                  color: "#00D3EF",
-                }}
-              >
-                {" "}
-                View more{" "}
-              </Box>
-            </Link>
-            <div
-              style={{
+            <Typography
+              sx={{
                 display: "flex",
-                justifyContent: "center",
+                justifyContent: "flex-end",
+                color: "#00D3EF",
+                fontSize: { xs: 13, md: 14 },
+                marginRight: { md: 5 },
+                marginTop: { xs: 1, md: 2 },
+              }}
+              component={Link}
+              to={`opportunity-detail/${job.id}`}
+            >
+              {" "}
+              View more{" "}
+            </Typography>
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "space-around",
                 marginTop: "3rem",
                 marginX: 5,
               }}
             >
-              <Link to="/apply">
-                <UserButtons textContent="Apply" />
-              </Link>
+              <UserButtons textContent="Apply" component={Link} to={"/apply"} />
               <UserButtons textContent="Refer" />
-            </div>
+            </Box>
           </CardContent>
         </Card>
       ))}
