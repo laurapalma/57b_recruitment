@@ -2,11 +2,11 @@ import React from "react";
 import { Box, Typography } from "@mui/material/";
 
 import CardOpportunities from "./CardOpportunities";
-import HeaderViews from "../HeaderViews";
-import icoUser from "../img/icoData.svg";
-import icoWeb from "../img/ico-web.svg";
-import icoBlockchain from "../img/icoBlockchain.svg";
-import "../componentsCandidate.css";
+import HeaderViews from "./HeaderViews";
+import icoUser from "./img/icoData.svg";
+import icoWeb from "./img/ico-web.svg";
+import icoBlockchain from "./img/icoBlockchain.svg";
+import "./componentsCandidate.css";
 
 const productBlockchain = [
   {
@@ -45,7 +45,7 @@ const JobOpportunities = () => {
         <Typography
           variant="p"
           sx={{
-            width: { md: 1156 },
+            width: { md: 1000 },
             height: { md: 64 },
             fontSize: { xs: 16, md: 18 },
             fontWeight: 400,
@@ -81,9 +81,3 @@ const JobOpportunities = () => {
 };
 
 export default JobOpportunities;
-
-/*<img
-src={icoTitle}
-alt="ico-Title"
-sx={{ width: { xs: 300, md: 417 } }}
-/>*/

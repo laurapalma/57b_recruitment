@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Card, Box, CardContent, Typography, Container } from "@mui/material/";
 import axios from "axios";
 
-import UserButtons from "../secondView/UserButtons.jsx";
+import UserButtons from "./secondView/UserButtons.jsx";
 
 const JobOfferList = () => {
   const [jobCard, setJob] = useState([]);
@@ -28,7 +28,11 @@ const JobOfferList = () => {
     <Container
       sx={{
         display: "grid",
-        gridTemplateColumns: { xs: "repeat(1,1fr)", md: "repeat(3,1fr)" },
+        gridTemplateColumns: {
+          xs: "repeat(1,1fr)",
+          md: "repeat(2,1fr)",
+          lg: "repeat(3,1fr)",
+        },
         marginTop: { xs: 10, md: 20 },
         justifyContent: "center",
         alignItems: "center",
@@ -73,7 +77,7 @@ const JobOfferList = () => {
                   position: "relative",
                   fontWeight: 600,
                   marginLeft: 3,
-                  marginTop: 5,
+                  marginTop: { xs: 3, md: 5 },
                 }}
                 color="primary"
                 gutterBottom
@@ -116,11 +120,11 @@ const JobOfferList = () => {
               sx={{
                 display: "flex",
                 justifyContent: "space-around",
-                marginTop: "3rem",
+                marginTop: { xs: 1, md: 3 },
                 marginX: 5,
               }}
             >
-              <UserButtons textContent="Apply" component={Link} to={"/apply"} />
+              <UserButtons textContent="Apply" />
               <UserButtons textContent="Refer" />
             </Box>
           </CardContent>

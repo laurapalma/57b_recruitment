@@ -31,7 +31,7 @@ function App() {
               path="opportunity-detail/:id"
               element={<OpportunityDetailsView />}
             />
-            <Route path="apply" element={<ApplyFormView />} />
+            <Route path="apply-job" element={<ApplyFormView />} />
             <Route path="Login-Administrator" element={<LoginAdm />} />
             <Route path="table-candidates" element={<Candidates />} />
             <Route path="create-new-opportunity" element={<CreateJob />} />

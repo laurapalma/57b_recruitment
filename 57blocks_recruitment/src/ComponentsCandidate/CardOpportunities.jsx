@@ -1,13 +1,13 @@
 import React from "react";
 import { Card, CardContent, Typography } from "@mui/material/";
-import "../componentsCandidate.css";
+import "./componentsCandidate.css";
 
 const CardOpportunities = ({ item }) => {
   return (
     <Card
       sx={{
         display: "flex",
-        width: { xs: 343, md: 378 },
+        width: { xs: 343, md: 300, lg: 378 },
         height: { xs: 104, md: 172 },
         justifyContent: { xs: "center", md: "center" },
         alignItems: { xs: "center", md: "center" },

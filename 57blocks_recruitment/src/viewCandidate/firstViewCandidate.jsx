@@ -1,6 +1,6 @@
 import React from "react";
-import JobOfferList from "../ComponentsCandidate/firstView/JobOfferList.jsx";
-import JobOpportunities from "../ComponentsCandidate/firstView/JobOpportunities.jsx";
+import JobOfferList from "../ComponentsCandidate/JobOfferList.jsx";
+import JobOpportunities from "../ComponentsCandidate/JobOpportunities.jsx";
 
 const firstViewCandidate = () => {
   return (
