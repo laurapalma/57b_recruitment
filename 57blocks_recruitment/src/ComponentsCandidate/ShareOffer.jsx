@@ -8,6 +8,7 @@ import shareIn from "./img/share_in.svg";
 
 const ShareOffer = ({ linkJob }) => {
   const url = document.URL;
+  const shareUrl = url + linkJob;
 
   const [state, setState] = React.useState({
     open: false,
@@ -34,7 +35,7 @@ const ShareOffer = ({ linkJob }) => {
         marginX: 3,
       }}
     >
-      <CopyToClipboard text={url + linkJob}>
+      <CopyToClipboard text={shareUrl}>
         <img
           src={shareLink}
           alt="share_link"
@@ -56,9 +57,20 @@ const ShareOffer = ({ linkJob }) => {
         key={vertical + horizontal}
         autoHideDuration={4000}
       />
-
-      <img src={shareFb} alt="share_facebook"></img>
-      <img src={shareIn} alt="share_linkedIn"></img>
+      <a
+        href={`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src={shareFb} alt="share_facebook"></img>
+      </a>
+      <a
+        href={`https://www.linkedin.com/sharing/share-offsite/?url=${shareUrl}`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src={shareIn} alt="share_linkedIn"></img>
+      </a>
     </Box>
   );
 };

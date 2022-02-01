@@ -50,6 +50,7 @@ const JobOfferList = () => {
             padding: 0,
             margin: 3,
             marginTop: 0,
+            marginBottom: 10,
           }}
           elevation={3}
         >
