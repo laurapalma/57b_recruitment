@@ -128,7 +128,7 @@ const JobOfferList = () => {
               <UserButtons textContent="Refer" />
             </Box>
             <Box>
-              <ShareOffer />
+              <ShareOffer linkJob={`opportunity-detail/${job.id}`} />
             </Box>
           </CardContent>
         </Card>
