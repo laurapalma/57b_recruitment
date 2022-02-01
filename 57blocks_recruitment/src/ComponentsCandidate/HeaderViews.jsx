@@ -10,7 +10,7 @@ const HeaderView = () => {
       style={{
         backgroundColor: "#FFFFFF",
         height: "11vh",
-        width: "100vw",
+        width: "100%",
         justifyContent: "space-around",
       }}
     >
