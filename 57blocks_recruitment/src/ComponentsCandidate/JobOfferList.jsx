@@ -4,6 +4,7 @@ import { Card, Box, CardContent, Typography, Container } from "@mui/material/";
 import axios from "axios";
 
 import UserButtons from "./secondView/UserButtons.jsx";
+import ShareOffer from "../ComponentsCandidate/ShareOffer.jsx";
 
 const JobOfferList = () => {
   const [jobCard, setJob] = useState([]);
@@ -11,7 +12,6 @@ const JobOfferList = () => {
   const conection = () => {
     axios.get("https://stormy-river-28303.herokuapp.com/api/v1/jobs").then(
       (result) => {
-        console.log("data", result.data);
         setJob(result.data);
       },
       (error) => {
@@ -119,13 +119,16 @@ const JobOfferList = () => {
             <Box
               sx={{
                 display: "flex",
-                justifyContent: "space-around",
+                justifyContent: "space-between",
                 marginTop: { xs: 1, md: 3 },
                 marginX: 5,
               }}
             >
               <UserButtons textContent="Apply" />
               <UserButtons textContent="Refer" />
+            </Box>
+            <Box>
+              <ShareOffer />
             </Box>
           </CardContent>
         </Card>
