@@ -5,7 +5,7 @@ import { Button, IconButton } from "@material-ui/core";
 
 import WhatWillYouDo from "../ComponentsCandidate/secondView/WhatWillYouDo.jsx";
 import OpportunityConditions from "../ComponentsCandidate/secondView/OpportunityConditions.jsx";
-import OfferButtons from "../ComponentsCandidate/secondView/UserButtons.jsx";
+import OfferButtons from "../ComponentsCandidate/UserButtons.jsx";
 import { useParams, Link } from "react-router-dom";
 import axios from "axios";
 

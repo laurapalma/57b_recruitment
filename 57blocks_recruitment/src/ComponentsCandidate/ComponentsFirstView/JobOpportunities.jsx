@@ -1,12 +1,12 @@
 import React from "react";
 import { Box, Typography } from "@mui/material/";
 
-import CardOpportunities from "./CardOpportunities";
-import HeaderViews from "./HeaderViews";
-import icoUser from "./img/icoData.svg";
-import icoWeb from "./img/ico-web.svg";
-import icoBlockchain from "./img/icoBlockchain.svg";
-import "./componentsCandidate.css";
+import CardOpportunities from "./CardOpportunities.jsx";
+import HeaderViews from "../HeaderViews.jsx";
+import icoUser from "../img/icoData.svg";
+import icoWeb from "../img/ico-web.svg";
+import icoBlockchain from "../img/icoBlockchain.svg";
+import "../componentsCandidate.css";
 
 const productBlockchain = [
   {

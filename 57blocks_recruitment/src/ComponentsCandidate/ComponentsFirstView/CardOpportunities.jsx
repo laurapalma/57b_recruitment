@@ -1,6 +1,6 @@
 import React from "react";
 import { Card, CardContent, Typography } from "@mui/material/";
-import "./componentsCandidate.css";
+import "../componentsCandidate.css";
 
 const CardOpportunities = ({ item }) => {
   return (

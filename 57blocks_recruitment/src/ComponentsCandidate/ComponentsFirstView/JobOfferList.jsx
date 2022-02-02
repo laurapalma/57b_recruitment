@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import { Card, Box, CardContent, Typography, Container } from "@mui/material/";
 import axios from "axios";
 
-import UserButtons from "./secondView/UserButtons.jsx";
-import ShareOffer from "../ComponentsCandidate/ShareOffer.jsx";
+import UserButtons from "../UserButtons.jsx";
+import ShareOffer from "../ShareOffer.jsx";
 
 const JobOfferList = () => {
   const [jobCard, setJob] = useState([]);
@@ -23,6 +23,13 @@ const JobOfferList = () => {
   useEffect(() => {
     conection();
   }, []);
+
+  const colorsCards = ["#3CDFF5", "#42E9AF", "#FFCA41"];
+
+  const changeColorsCard = (colors) => {
+    const color = colors[Math.floor(Math.random() * colors.length)];
+    return color;
+  };
 
   return (
     <Container
@@ -68,7 +75,7 @@ const JobOfferList = () => {
                   height: "8px",
                   left: "5px",
                   opacity: "0.3",
-                  backgroundColor: "#42E9AF",
+                  backgroundColor: changeColorsCard(colorsCards),
                 },
               }}
             >

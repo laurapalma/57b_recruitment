@@ -9,7 +9,6 @@ const Candidates = () => {
         container
         spacing={1}
         direction="column"
-        spacing={5}
         justifyContent="center"
         alignItems="center"
         marginTop="50"

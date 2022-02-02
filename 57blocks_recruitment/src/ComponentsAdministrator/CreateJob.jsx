@@ -105,7 +105,6 @@ const CreateJob = () => {
             style={{
               display: "flex",
               justifyContent: "space-around",
-              borderBottom: "none",
               width: "300px",
               height: "150px",
               flexDirection: "column",
@@ -139,7 +138,6 @@ const CreateJob = () => {
             style={{
               display: "flex",
               justifyContent: "space-around",
-              borderBottom: "none",
               width: "300px",
               height: "150px",
               flexDirection: "column",
@@ -171,7 +169,6 @@ const CreateJob = () => {
             style={{
               display: "flex",
               justifyContent: "space-around",
-              borderBottom: "none",
               width: "300px",
               height: "150px",
               flexDirection: "column",
@@ -203,7 +200,6 @@ const CreateJob = () => {
             style={{
               display: "flex",
               justifyContent: "space-around",
-              borderBottom: "none",
               width: "300px",
               height: "150px",
               flexDirection: "column",
