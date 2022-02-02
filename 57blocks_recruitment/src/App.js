@@ -2,8 +2,9 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { grey } from "@mui/material/colors";
+
 import FirstViewCandidate from "./viewCandidate/firstViewCandidate.jsx";
-import OpportunityDetailsView from "./viewCandidate/OpportunityDetailsView.jsx";
+import SecondViewCandidate from "./viewCandidate/SecondViewCandidate.jsx";
 import ApplyFormView from "./viewCandidate/ApplyFormView.jsx";
 import Candidates from "./ComponentsAdministrator/candidates.jsx";
 import CreateJob from "./ComponentsAdministrator/CreateJob.jsx";
@@ -29,7 +30,7 @@ function App() {
             <Route path="/" element={<FirstViewCandidate />} />
             <Route
               path="opportunity-detail/:id"
-              element={<OpportunityDetailsView />}
+              element={<SecondViewCandidate />}
             />
             <Route path="apply-job" element={<ApplyFormView />} />
             <Route path="Login-Administrator" element={<LoginAdm />} />
