@@ -1,12 +1,10 @@
 import React from "react";
-import JobOfferList from "../ComponentsCandidate/firstView/JobOfferList.jsx";
-import JobOpportunities from "../ComponentsCandidate/firstView/JobOpportunities.jsx";
-import HeaderView from "./HeaderViews.jsx";
+import JobOfferList from "../ComponentsCandidate/ComponentsFirstView/JobOfferList.jsx";
+import JobOpportunities from "../ComponentsCandidate/ComponentsFirstView/JobOpportunities.jsx";
 
 const firstViewCandidate = () => {
   return (
     <>
-      <HeaderView />
       <JobOpportunities />
       <JobOfferList />
     </>

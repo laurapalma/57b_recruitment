@@ -1,17 +1,18 @@
 import React from "react";
 import { Card, CardContent, Typography } from "@mui/material/";
+import "../componentsCandidate.css";
 
 const CardOpportunities = ({ item }) => {
   return (
     <Card
       sx={{
         display: "flex",
-        width: { xs: 343, md: 340 },
+        width: { xs: 343, md: 300, lg: 378 },
         height: { xs: 104, md: 172 },
         justifyContent: { xs: "center", md: "center" },
         alignItems: { xs: "center", md: "center" },
-        flexDirection: { xs: "column", md: "column" },
-        marginTop: 3,
+        flexDirection: { xs: "column", md: "row" },
+        marginTop: { xs: 3 },
       }}
       spacing={8}
       elevation={3}
@@ -23,8 +24,11 @@ const CardOpportunities = ({ item }) => {
           alignItems: { xs: "center", md: "center" },
         }}
       >
-        <img src={item.icon} alt="ico-Blockchain" />
-        <Typography sx={{ fontSize: 18 }} variant="p">
+        <img src={item.icon} alt="icons" className="mini_icons" />
+        <Typography
+          sx={{ fontSize: { xs: 16, md: 18 }, marginLeft: { xs: 3 } }}
+          variant="p"
+        >
           {item.text}
         </Typography>
       </CardContent>

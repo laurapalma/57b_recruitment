@@ -6,9 +6,9 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
-import view from "../images/view.svg";
-import edit from "../images/edit.svg";
-import trash from "../images/trash.svg";
+import view from "./img/view.svg";
+import edit from "./img/edit.svg";
+import trash from "./img/trash.svg";
 
 import axios from "axios";
 
@@ -32,7 +32,7 @@ const OfferListAdmin = () => {
   }, []);
 
   const handleClick = () => {
-    window.location = "/createJob";
+    window.location = "create-new-opportunity";
   };
 
   const handleDelete = (job) => {
@@ -127,7 +127,7 @@ const OfferListAdmin = () => {
                 {job.summary}
               </Typography>
               <Link
-                to="/jobOpportunity"
+                to="opportunity-detail/:id"
                 style={{
                   display: "flex",
                   justifyContent: "flex-end",
