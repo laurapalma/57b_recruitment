@@ -1,3 +1,5 @@
+/*First View Candidate*/
+
 .img_title {
   background-image: url("/src/ComponentsCandidate/img/title.svg");
   width: 417px;
@@ -8,8 +10,8 @@
   background-image: url("/src/ComponentsCandidate/img/logo.svg");
   width: 135px;
   height: 40px;
-  margin-right: 25vw;
-  margin-left: 5vw;
+  margin-right: 10vw;
+  margin-left: 18vw;
 }
 
 .container_cards {
@@ -27,17 +29,37 @@
   background-color: #f7fbfe;
 }
 
+/*Second View Candidate*/
+
+.img_button_return {
+  width: 30px;
+  height: 30px;
+  margin-left: 350px;
+  margin-top: 10px;
+}
+
+.h3_job_name {
+  font-size: 28px;
+  font-weight: 600;
+  margin-left: 15px;
+}
+
 @media (max-width: 1300px) {
+  /*First View Candidate*/
+
   .img_logo {
     background-repeat: no-repeat;
     margin-right: 5vw;
-    margin-left: 1vw;
+    margin-left: 8vw;
+    margin-top: 20px;
     width: 150px;
     height: 60px;
   }
+
   .options_header {
     align-items: center;
   }
+
   .container_cards {
     display: grid;
     gap: 5%;
@@ -45,13 +67,31 @@
     justify-content: center;
     margin-right: 3%;
   }
+
   .container_cards_jobs {
     grid-template-columns: 25% 25% 25%;
     justify-content: center;
   }
+
+  /*Second View Candidate*/
+
+  .img_button_return {
+    width: 28px;
+    height: 28px;
+    margin-left: 100px;
+    margin-top: 10px;
+  }
+
+  .h3_job_name {
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: 10px;
+  }
 }
 
 @media (max-width: 600px) {
+  /*First View Candidate*/
+
   .img_title {
     background-image: url("/src/ComponentsCandidate/img/titleDos.svg");
     width: 281px;
@@ -61,8 +101,9 @@
     background-repeat: no-repeat;
     width: 150px;
     height: 40px;
+    margin-top: 5px;
     margin-right: 0;
-    margin-left: 0;
+    margin-left: 3px;
   }
   .options_header {
     display: none;
@@ -88,5 +129,20 @@
     justify-content: center;
     align-items: center;
     gap: 3px;
+  }
+
+  /*Second View Candidate*/
+
+  .img_button_return {
+    width: 24px;
+    height: 24px;
+    margin-left: 5px;
+    margin-top: 12px;
+  }
+
+  .h3_job_name {
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 0px;
   }
 }

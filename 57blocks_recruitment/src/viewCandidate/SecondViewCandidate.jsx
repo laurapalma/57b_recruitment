@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
-import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import { AppBar, Toolbar } from "@mui/material";
-import { Button, IconButton } from "@material-ui/core";
+import { Box } from "@mui/material";
+import { Button } from "@material-ui/core";
 import { useParams, Link } from "react-router-dom";
 import axios from "axios";
 
@@ -9,6 +8,8 @@ import HeaderView from "../ComponentsCandidate/HeaderViews.jsx";
 import WhatWillYouDo from "../ComponentsCandidate/ComponentsSecondView/WhatWillYouDo.jsx";
 import OpportunityConditions from "../ComponentsCandidate/ComponentsSecondView/OpportunityConditions.jsx";
 import OfferButtons from "../ComponentsCandidate/UserButtons.jsx";
+import "../ComponentsCandidate/componentsCandidate.css";
+import arrowReturn from "../ComponentsCandidate/img/arrow_return.svg";
 
 const experienceItems = [
   "Have at least four years of experience with React.js",
@@ -45,52 +46,51 @@ const SecondViewCandidate = () => {
   return (
     <>
       <HeaderView />
-
-      <AppBar
+      <Box
         position="static"
-        style={{ display: "flex", justifyContent: "center" }}
+        sx={{
+          display: "flex",
+          justifyContent: "flex-start",
+          height: { xs: 50, md: 77, lg: 88 },
+          bgcolor: "#FAFAFA",
+          paddingRight: "0",
+          paddingLeft: "0",
+        }}
       >
-        <Toolbar
+        <Button
           sx={{
-            minHeight: "5rem",
-            bgcolor: "#FAFAFA",
-            paddingRight: "0",
-            paddingLeft: "0",
+            textTransform: "capitalize",
           }}
+          component={Link}
+          to={"/"}
         >
-          <IconButton
-            size="medium"
-            edge="start"
-            aria-label="apply"
-          ></IconButton>
-          <Link to="/">
-            <Button
-              style={{
-                fontSize: 24,
-                textTransform: "capitalize",
-              }}
-              startIcon={<ArrowBackIcon fontSize="24px" />}
-            >
-              <h4>{job && job.name}</h4>
-            </Button>
-          </Link>
-        </Toolbar>
-      </AppBar>
-      <div style={{ display: "flex", justifyContent: "center" }}>
+          <img
+            src={arrowReturn}
+            alt="arrow_return"
+            className="img_button_return"
+          ></img>
+        </Button>
+        <h3 className="h3_job_name">{job && job.name}</h3>
+      </Box>
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          backgroundColor: "#FFFFFF",
+        }}
+      >
         <WhatWillYouDo />
-      </div>
+      </Box>
 
-      <div style={{ display: "flex", justifyContent: "center" }}>
+      <Box sx={{ display: "flex", justifyContent: "center" }}>
         <OpportunityConditions kind="experience" items={experienceItems} />
         <OpportunityConditions kind="perk" items={perkItems} />
-      </div>
+      </Box>
 
-      <div style={{ display: "flex", justifyContent: "center", marginX: 5 }}>
-        <Link to="/apply">
-          <OfferButtons textContent="Apply" />
-        </Link>
-        <OfferButtons textContent="Refer" />
-      </div>
+      <Box sx={{ display: "flex", justifyContent: "center", marginX: 5 }}>
+        <OfferButtons textContent="Apply" component={Link} to={"/apply"} />
+        <OfferButtons textContent="Refer" component={Link} to={"/apply"} />
+      </Box>
     </>
   );
 };
